@@ -1,0 +1,34 @@
+{
+    "schemaVersion": 1,
+    "id": "ccradar",
+    "version": "${version}",
+    "name": "ccradar",
+    "description": "CloudMC Claiming mod",
+    "authors": [
+        "localhackerman"
+    ],
+    "contact": {},
+    "license": "All-Rights-Reserved",
+    "icon": "assets/ccradar/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "client": [
+            "uk.cloudmc.microwavedram.ccradar.client.CCradarClient"
+        ],
+        "main": [
+            "uk.cloudmc.microwavedram.ccradar.CCradar"
+        ]
+    },
+    "mixins": [
+        "ccradar.mixins.json",
+        {
+            "config": "ccradar.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}

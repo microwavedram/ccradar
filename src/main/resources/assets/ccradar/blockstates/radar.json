@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "ccradar:block/radar" }
+    }
+}
